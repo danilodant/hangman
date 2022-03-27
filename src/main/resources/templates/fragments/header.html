@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div id="header-div" class="row" th:fragment="header">
+    <div id="title-div" class="row">
+      <h4 id="title" class="center-align">Hangman game by Danilo Gorjon</h4>
+    </div>
+    <div id="header-content" class="row valign-wrapper">
+      <div class="col s11">
+        <blockquote>
+          <p id="last-game-result-title">Last played game:</p>
+          <span id="last-game-result" th:text="${lastGameResult}" class="orange lighten-3"></span>
+        </blockquote>
+      </div>
+      <div class="col s1 right-align">
+        <a href="/game/reset" id="reset-button" class="waves-effect waves-light red lighten-1 btn">reset</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

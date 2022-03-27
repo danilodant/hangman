@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div id="game-div" th:fragment="start">
+    <div id="new-game-div">
+      <a href="/game/new" id="new-game-button" class="waves-effect waves-light btn">PRESS TO START NEW GAME</a>
+    </div>
+  </div>
+  <div id="current-game" class="center-align" th:fragment="game">
+    <div id="current-game-public-word" class="row" th:text="${publicWord}"></div>
+    <form id="guess-form" class="input-field row" th:action="@{/game/guess}" th:method="post">
+      <input placeholder="Type a letter to guess" id="guess-form-input" class="center-align offset-s3" type="text" th:name="letter" th:value="${letter}">
+      <input type="submit" hidden>
+    </form>
+    <div id="current-game-display" class="row">
+      <div id="current-game-guessed-letters" class="col s3">
+        <p>Correct letters:</p>
+        <ul>
+          <li th:each="gletter:${guessed}" th:text="${gletter}"></li>
+        </ul>
+      </div>
+      <div id="current-game-image" class="col s6">
+        <img th:src="@{${'img/Hangman-'+missedSize+'.png'}}" />
+      </div>
+      <div id="current-game-missed-letters" class="s3">
+        <p>Wrong letters:</p>
+        <ul>
+          <li th:each="mletter:${missed}" th:text="${mletter}"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

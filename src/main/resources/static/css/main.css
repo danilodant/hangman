@@ -1,0 +1,41 @@
+#header-div{
+  margin-bottom: 0px;
+}
+
+#title {
+  margin-bottom: 0px;
+}
+
+.divider {
+    margin-bottom: 2rem;
+}
+
+#new-game-button {
+  width: 256px;
+  margin-left: calc(50% - 111px);
+}
+
+#guess-form {
+  width: 256px;
+}
+
+#last-game-result-title {
+  margin-bottom: 0.5rem;
+}
+
+#guess-form-label {
+  text-align: center;
+}
+
+/* #current-game-guessed-letters{
+  width: calc(50% - 128px);
+} */
+
+/* #current-game-image {
+  text-align: center;
+  margin-right: calc(50% - 128px);
+} */
+
+/* #current-game-missed-letters{
+  width: calc(50% - 128px);
+} */
