@@ -16,31 +16,31 @@ Just go to [hangman-by-danilodant](https://hangman-by-danilodant.herokuapp.com/)
 
 Make sure you have your environment correctly configured with java 8 and maven (I used 3.8.4). Then follow the next steps below.
 
-> Copy the codebase to your machine, you can do that with the following command:
+Copy the codebase to your machine, you can do that with the following command:
 
-SSH
+> SSH
 ```shell
-https://github.com/danilodant/hangman.git
+git clone https://github.com/danilodant/hangman.git
 ```
 
-or HTTPS
+> or HTTPS
 ```shell
-https://github.com/danilodant/hangman.git
+git clone https://github.com/danilodant/hangman.git
 ```
 
-> Go to the project folder:
+Go to the project folder:
 
 ```shell
 cd hangman
 ```
 
-> Compile your code:
+Compile your code:
 
 ```shell
 mvn clean package spring-boot:repackage
 ```
 
-> Run the project:
+Run the project:
 ```shell
 java -jar target/hangman-1.0.0.jar
 ```
